@@ -26,7 +26,7 @@ RATE_DELAY = 0.34         # seconds between requests (~3 req/s; NCBI limit witho
 OUTPUT_PATH = Path("data/raw_abstracts.json")
 
 # NCBI requires a valid e-mail address
-Entrez.email = "fetch_pubmed@oncology-evidence-engine.local"
+Entrez.email = "julesroussel.de.c@gmail.com"
 # ──────────────────────────────────────────────────────────────────────────────
 
 
