@@ -6,6 +6,7 @@ embed_data.py – Load raw abstracts, chunk them, embed with OpenAI,
 import json
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -16,6 +17,7 @@ from qdrant_client.models import Distance, VectorParams
 from tqdm import tqdm
 
 # ── Config ────────────────────────────────────────────────────────────────────
+load_dotenv()
 DATA_PATH      = Path("data/raw_abstracts.json")
 QDRANT_URL     = "http://localhost:6333"
 COLLECTION     = "lung_cancer_trials"

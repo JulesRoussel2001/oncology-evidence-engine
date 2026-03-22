@@ -1,0 +1,36 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# --- SECRETS & CONFIG ---
+
+# --- SECRETS & CONFIG ---
+.env
+//*.env**
+.env.local
+
+# --- PYTHON ENVIRONMENTS ---
+.venv/
+venv/
+ENV/
+bin/
+lib/
+include/
+share/
+pycache/
+*.pyc
+
+# --- NODE DEPENDENCIES ---
+node_modules/
+**/node_modules/
+
+# --- DATABASE & DOCKER ---
+qdrant_data/
+docker-volumes/
+
+# --- BUILD OUTPUTS ---
+dist/
+build/
+*.tsbuildinfo
+
+# --- SYSTEM FILES ---
+.DS_Store
+Thumbs.db
+*.log
